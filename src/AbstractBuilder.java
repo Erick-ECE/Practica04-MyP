@@ -1,10 +1,10 @@
 public interface AbstractBuilder {
     //Vehiculo vehiculo = new Vehiculo();
 
-    public void tipoCarroceria();
-    public void addMotor();
-    public void addLlantas();
-    public void addBlindaje();
-    public void addArmas();
+    public void tipoCarroceria(String carroceria);
+    public void addMotor(String motor);
+    public void addLlantas(String llantas);
+    public void addBlindaje(String blindaje);
+    public void addArmas(String arma);
     public void getCar();
 }
