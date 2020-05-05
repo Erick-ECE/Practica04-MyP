@@ -1,0 +1,13 @@
+all: compile run
+
+default:
+	if [ ! -d class ]; then mkdir class; fi;
+
+compile: default
+	javac src/AgenciaMadCars.java -d ./class
+
+run: compile
+	java -cp ./class AgenciaMadCars
+
+clean:
+	rm -rf ./class

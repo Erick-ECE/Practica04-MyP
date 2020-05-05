@@ -23,8 +23,17 @@ _implementación del patrón de diseño Builder en un simulador de constructor d
 
 # Ejecución del programa
 
+Para fines practicos se creo un archivo makefile para agilizar las acciones del proyecto. (_se ejecuta desde el directorio principal._)
+
+## Compilar y Ejecutar:
 ```bash
-$ make .....
+$ make
+
+```
+
+## Borrar los archivos .class :
+```bash
+$ make clean
 
 ```
 
