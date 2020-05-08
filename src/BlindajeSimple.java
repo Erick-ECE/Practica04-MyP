@@ -1,3 +1,6 @@
+/**Clase concreta que especifica el tipo de elemento Blindaje
+ * dando valores especificas a las cualidades del elemento
+  */
 public class BlindajeSimple extends Blindaje {
 
     public BlindajeSimple() {

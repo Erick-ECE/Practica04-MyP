@@ -1,3 +1,4 @@
+/**Clase que indica que tipo de elemento es */
 public abstract class Llantas implements Elemento {
     String nombre; // tipo de llantas ("simple", "deportivas", "off-road", "oruga de tanque")
     int costo;     // $$

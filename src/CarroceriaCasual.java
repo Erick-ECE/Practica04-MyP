@@ -1,3 +1,6 @@
+/**Clase concreta que especifica el tipo de elemento Carroceria
+ * dando valores especificas a las cualidades del elemento
+  */
 public class CarroceriaCasual extends Carroceria{
 
     public CarroceriaCasual() {

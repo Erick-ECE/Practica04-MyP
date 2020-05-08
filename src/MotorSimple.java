@@ -1,3 +1,6 @@
+/**Clase concreta que especifica el tipo de elemento Motor
+ * dando valores especificas a las cualidades del elemento
+  */
 public class MotorSimple extends Motor {
     
     public MotorSimple() {

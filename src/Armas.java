@@ -1,3 +1,4 @@
+/**Clase que especifica que tipo de elementro es */
 public abstract class Armas implements Elemento{
     String nombre; // tipo de armas ("arpones", "lanzallamas", "lanzas", "sierra", "metralleta")
     int costo;     // $$

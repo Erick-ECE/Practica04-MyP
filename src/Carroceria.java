@@ -1,3 +1,4 @@
+/**Clase que indica que tipo de elemento es */
 public abstract class Carroceria implements Elemento {
     String nombre; // tipo de carroceria  ("casual", "camion", "deportiva" )
     int costo;     // $$

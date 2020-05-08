@@ -1,3 +1,4 @@
+/**Clase que especifica que tipo de elemento es */
 public abstract class Motor implements Elemento {
     String nombre; // tipo de motor ("deportivo", "diesel", "simple" )
     int costo;     // $$

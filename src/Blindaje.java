@@ -1,3 +1,4 @@
+/**Clase que especifica que tipo de elemento es */
 public abstract class Blindaje implements Elemento {
     String nombre; // tipo de blindaje ("simple", "reforzado", "tanque")
     int costo;     // $$

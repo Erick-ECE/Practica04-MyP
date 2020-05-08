@@ -1,3 +1,6 @@
+/**Clase concreta que especifica el tipo de elemento llanta
+ * dando valores especificas a las cualidades del elemento
+  */
 public class LlantasDeportivas extends Llantas {
     
     public LlantasDeportivas() {

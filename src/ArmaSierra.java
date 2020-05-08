@@ -1,3 +1,6 @@
+/**Clase concreta que especifica el tipo de elemento Arma
+ * dando valores especificas a las cualidades del elemento
+  */
 public class ArmaSierra extends Armas {
     
     public ArmaSierra() {
