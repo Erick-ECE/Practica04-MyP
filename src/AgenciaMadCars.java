@@ -46,9 +46,9 @@ public class AgenciaMadCars {
                 switch(opcion){
                     case 1:builder = new StockBuilder1();
                     break;
-                    case 1:builder = new StockBuilder2();
+                    case 2:builder = new StockBuilder2();
                     break;
-                    case 1:builder = new StockBuilder3();
+                    case 3:builder = new StockBuilder3();
                     break;
                 }
             break;
@@ -70,12 +70,12 @@ public class AgenciaMadCars {
 
 
         //imprime datos del vehiculo generado
-        System.out.println( "Este es su auto:\n ")
-        System.out.println( "Componentes: "+ descripcionTotal+"\n ")
-        System.out.println( "Costo: "+ costoTotal+"\n ")
-        System.out.println( "Ataque: "+ ataqueTotal+"\n ")
-        System.out.println( "Defensa: "+ defensaTotal+"\n ")
-        System.out.println( "Velocidad: "+ velocidadTotal+"\n ")
+        System.out.println( "Este es su auto:\n ");
+        System.out.println( "Componentes: "+ descripcionTotal+"\n ");
+        System.out.println( "Costo: "+ costoTotal+"\n ");
+        System.out.println( "Ataque: "+ ataqueTotal+"\n ");
+        System.out.println( "Defensa: "+ defensaTotal+"\n ");
+        System.out.println( "Velocidad: "+ velocidadTotal+"\n ");
         /* getCosto()
         getNombre
         getAtaque

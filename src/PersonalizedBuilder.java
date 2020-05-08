@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //clase para un vehiculo personalizado
-public class PersonalizedBuilder implements AbstractBuilder {
+public class PersonalizedBuilder extends AbstractBuilder {
     Scanner s = new Scanner(System.in);
     int opcion = 0;
 
@@ -21,6 +21,8 @@ public class PersonalizedBuilder implements AbstractBuilder {
             break;
             case 3:carroceria = new CarroceriaDeportiva();
             break;
+            default:carroceria = new CarroceriaCasual();
+            break;
         }
         super.vehiculo.setCarroceria(carroceria);
     }
@@ -40,6 +42,8 @@ public class PersonalizedBuilder implements AbstractBuilder {
             break;
             case 3:motor = new MotorSimple();
             break;
+            default:motor = new MotorSimple();
+            break;
         }
         super.vehiculo.setMotor(motor);
     }
@@ -51,7 +55,7 @@ public class PersonalizedBuilder implements AbstractBuilder {
                         "      1.- Deportivas \n" + 
                         "       2.- OffRoad \n" +
                         "       3.- Siples \n" +
-                        "       3.- Tanque \n" +);
+                        "       3.- Tanque \n" );
         opcion = s.nextInt();
         switch(opcion){
             case 1:llantas = new LlantasDeportivas();
@@ -61,6 +65,8 @@ public class PersonalizedBuilder implements AbstractBuilder {
             case 3:llantas = new LlantasSiples();
             break;
             case 4:llantas = new LlantasTanque();
+            break;
+            default:llantas = new LlantasSiples();
             break;
         }
         super.vehiculo.setLlantas(llantas);
@@ -80,6 +86,8 @@ public class PersonalizedBuilder implements AbstractBuilder {
             case 2:blindaje = new BlindajeSimple();
             break;
             case 3:blindaje = new BlindajeTanque();
+            break;
+            default:blindaje = new BlindajeSimple();
             break;
         }
         super.vehiculo.setBlindaje(blindaje);
@@ -105,6 +113,8 @@ public class PersonalizedBuilder implements AbstractBuilder {
             case 4:armas = new ArmaMetralla();
             break;
             case 5:armas = new ArmaSierra();
+            break;
+            default:armas = new ArmaArpon();
             break;
         }
         super.vehiculo.setArmas(armas);

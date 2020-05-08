@@ -1,4 +1,4 @@
-public class StockBuilder1 implements AbstractBuilder { //clase para un Stock2
+public class StockBuilder1 extends AbstractBuilder { //clase para un Stock1
     public StockBuilder1(){super.vehiculo = new Vehiculo();}
 
     public void tipoCarroceria(){ // se pasa un tipo concreto de carroceria CarroceriaCamion
