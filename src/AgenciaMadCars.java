@@ -72,10 +72,10 @@ public class AgenciaMadCars {
 
             //Obtiene los totales de las partes
             //falta calcular los totales de las partes
-            String descripcionTotal = vehiculo.getCarroceria().getNombre() + ", "
-                                    + vehiculo.getMotor().getNombre() + ", "
-                                    + vehiculo.getLlantas().getNombre() + ", "
-                                    + vehiculo.getBlindaje().getNombre() + ", "
+            String descripcionTotal = vehiculo.getCarroceria().getNombre() + ",\n "
+                                    + vehiculo.getMotor().getNombre() + ", \n"
+                                    + vehiculo.getLlantas().getNombre() + ", \n"
+                                    + vehiculo.getBlindaje().getNombre() + ", \n"
                                     + vehiculo.getArmas().getNombre();
             int costoTotal = vehiculo.getCarroceria().getCosto()
                             + vehiculo.getMotor().getCosto() 
@@ -101,15 +101,17 @@ public class AgenciaMadCars {
 
             //Revisa que se mantenga en presupuesto
             if (costoTotal> presupuesto){
-                System.out.println( "Su presupuesto es muy bajo, regrese cuando ahorre más :'(\n ");
+                System.out.println( "\nSu presupuesto es muy bajo, regrese cuando ahorre más :'(\n ");
             }else{
                 //imprime datos del vehiculo generado
-                System.out.println( "Este es su auto:\n ");
+                System.out.println( "\n############  TICKET  ################\n ");
+                System.out.println( "\n\nEste es su auto:\n ");
                 System.out.println( "Componentes: "+ descripcionTotal+"\n ");
                 System.out.println( "Costo: "+ costoTotal+"\n ");
                 System.out.println( "Ataque: "+ ataqueTotal+"\n ");
                 System.out.println( "Defensa: "+ defensaTotal+"\n ");
                 System.out.println( "Velocidad: "+ velocidadTotal+"\n ");
+                System.out.println( "\n############  TICKET  ################\n ");
             }
         }else{
             System.out.println( "Por favor, solo opciones válidas de nuestro catálogo, adiós'(\n ");
