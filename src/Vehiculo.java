@@ -28,6 +28,28 @@ public class Vehiculo {
     public void setArmas(Armas armas) { // se pasa un tipo concreto de armas
         this.armas = armas;
     }
+    
+    public Carroceria getCarroceria() { // se regresa un tipo concreto de carroceria
+        return carroceria;
+    }
 
+    public Motor getMotor() { // se regresa un tipo concreto de motor
+        return motor;
+    }
+
+
+    public Llantas getLlantas() { // se regresa un tipo concreto de llantas
+        return llantas;
+    }
+
+   
+    public Blindaje getBlindaje() { // se regresa un tipo concreto de blindaje
+        return blindaje;
+    }
+
+
+    public Armas getArmas() { // se regresa un tipo concreto de armas
+        return armas;
+    }
     
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class AgenciaMadCars {
 
     public static void main(String[] args) {
-        AbstractBuilder builder;
+        AbstractBuilder builder = null;
         Vehiculo vehiculo;
         Scanner s = new Scanner(System.in);
         int opcion;
@@ -52,23 +52,54 @@ public class AgenciaMadCars {
                     break;
                 }
             break;
-        }
-        //Construlle el auto
-        vehiculo = builder.getCar();
+            default: 
+                System.out.println( " \n"+ "opcion erronea, escogiendo personalizado por default\n ");
+                builder = new PersonalizedBuilder();
+            break;
+    }
+    s.close();
 
-        //Obtiene los totales de las partes
-        //falta calcular los totales de las partes
-        String descripcionTotal;
-        int costoTotal;
-        int ataqueTotal;
-        int defensaTotal;
-        int velocidadTotal;
+    //Construlle el auto
+    builder.addMotor();
+    builder.addLlantas();
+    builder.addBlindaje();
+    builder.addArmas();
+    builder.tipoCarroceria();
+    vehiculo = builder.getCar();
 
-        //Revisa que se mantenga en presupuesto
+    //Obtiene los totales de las partes
+    //falta calcular los totales de las partes
+    String descripcionTotal = vehiculo.getCarroceria().getNombre() + ", "
+                            + vehiculo.getMotor().getNombre() + ", "
+                            + vehiculo.getLlantas().getNombre() + ", "
+                            + vehiculo.getBlindaje().getNombre() + ", "
+                            + vehiculo.getArmas().getNombre();
+    int costoTotal = vehiculo.getCarroceria().getCosto()
+                    + vehiculo.getMotor().getCosto() 
+                    + vehiculo.getLlantas().getCosto() 
+                    + vehiculo.getBlindaje().getCosto()
+                    + vehiculo.getArmas().getCosto();
+    int ataqueTotal= vehiculo.getCarroceria().getAtaque() 
+                    + vehiculo.getMotor().getAtaque()
+                    + vehiculo.getLlantas().getAtaque()
+                    + vehiculo.getBlindaje().getAtaque()
+                    + vehiculo.getArmas().getAtaque();
+    int defensaTotal= vehiculo.getCarroceria().getDefensa() 
+                    + vehiculo.getMotor().getDefensa()
+                    + vehiculo.getLlantas().getDefensa() 
+                    + vehiculo.getBlindaje().getDefensa()
+                    + vehiculo.getArmas().getDefensa();
+    int velocidadTotal= vehiculo.getCarroceria().getVelocidad() 
+                      + vehiculo.getMotor().getVelocidad() 
+                      + vehiculo.getLlantas().getVelocidad() 
+                      + vehiculo.getBlindaje().getVelocidad()
+                      + vehiculo.getArmas().getVelocidad();
 
-        //falta revisar si se pasó del presupuesto
 
-
+    //Revisa que se mantenga en presupuesto
+    if (costoTotal> presupuesto){
+        System.out.println( "Su presupuesto es muy bajo, regrese cuando ahorre más :'(\n ");
+    }else{
         //imprime datos del vehiculo generado
         System.out.println( "Este es su auto:\n ");
         System.out.println( "Componentes: "+ descripcionTotal+"\n ");
@@ -76,11 +107,8 @@ public class AgenciaMadCars {
         System.out.println( "Ataque: "+ ataqueTotal+"\n ");
         System.out.println( "Defensa: "+ defensaTotal+"\n ");
         System.out.println( "Velocidad: "+ velocidadTotal+"\n ");
-        /* getCosto()
-        getNombre
-        getAtaque
-        getDefensa
-        getVelocidad */
+    }
+    //falta revisar si se pasó del presupuesto
     }
 
     
