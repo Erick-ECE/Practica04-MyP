@@ -1,12 +1,12 @@
 import java.util.Scanner;
-
+//clase para un vehiculo personalizado
 public class PersonalizedBuilder implements AbstractBuilder {
     Scanner s = new Scanner(System.in);
     int opcion = 0;
 
     public PersonalizedBuilder(){super.vehiculo = new Vehiculo();}
 
-    public void tipoCarroceria(){
+    public void tipoCarroceria(){// se pasa un tipo concreto de carroceria personalizado
         Carroceria carroceria;
 
         System.out.println( " \n"+ "¿Que carrocería quiere? :\n "+
@@ -25,7 +25,7 @@ public class PersonalizedBuilder implements AbstractBuilder {
         super.vehiculo.setCarroceria(carroceria);
     }
 
-    public void addMotor(){
+    public void addMotor(){// se pasa un tipo concreto de motor personalizado
         Motor motor;
 
         System.out.println( " \n"+ "¿Que motor quiere? :\n "+
@@ -44,7 +44,7 @@ public class PersonalizedBuilder implements AbstractBuilder {
         super.vehiculo.setMotor(motor);
     }
 
-    public void addLlantas(){
+    public void addLlantas(){// se pasa un tipo concreto de llantas personalizado
         Llantas llantas;
 
         System.out.println( " \n"+ "¿Que llantas quiere? :\n "+
@@ -66,7 +66,7 @@ public class PersonalizedBuilder implements AbstractBuilder {
         super.vehiculo.setLlantas(llantas);
     }
 
-    public void addBlindaje(){
+    public void addBlindaje(){// se pasa un tipo concreto de blindaje personalizado
         Blindaje blindaje;
 
         System.out.println( " \n"+ "¿Que blindaje quiere? :\n "+
@@ -85,7 +85,7 @@ public class PersonalizedBuilder implements AbstractBuilder {
         super.vehiculo.setBlindaje(blindaje);
     }
 
-    public void addArmas(){
+    public void addArmas(){// se pasa un tipo concreto de armas personalizado
         Armas armas;
 
         System.out.println( " \n"+ "¿Que armas quiere? :\n "+

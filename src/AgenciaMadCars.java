@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//clase para el main, la agencia de autos
 public class AgenciaMadCars {
 
     public static void main(String[] args) {
@@ -28,10 +28,8 @@ public class AgenciaMadCars {
     
     System.out.println("Bienvenido!, Ingresa tu presupuesto(numero entero):");
     presupuesto = s.nextInt();
-    //TODO :
-    /** 
-     * 
-     */
+    
+    //Selecciona si hará un carro personalizado o una opción de stock
     System.out.println( " \n"+ "¿Que deseas hacer? :\n "+
                         "      1.- carro personalizado \n" + 
                         "      2.- opción de stock \n");
@@ -55,16 +53,23 @@ public class AgenciaMadCars {
                 }
             break;
         }
-
+        //Construlle el auto
         vehiculo = builder.getCar();
-        String descripcionTotal;
+
+        //Obtiene los totales de las partes
         //falta calcular los totales de las partes
+        String descripcionTotal;
         int costoTotal;
         int ataqueTotal;
         int defensaTotal;
         int velocidadTotal;
 
+        //Revisa que se mantenga en presupuesto
+
         //falta revisar si se pasó del presupuesto
+
+
+        //imprime datos del vehiculo generado
         System.out.println( "Este es su auto:\n ")
         System.out.println( "Componentes: "+ descripcionTotal+"\n ")
         System.out.println( "Costo: "+ costoTotal+"\n ")
