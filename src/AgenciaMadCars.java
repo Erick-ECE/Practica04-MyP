@@ -4,6 +4,7 @@ public class AgenciaMadCars {
 
     public static void main(String[] args) {
         AbstractBuilder builder;
+        Vehiculo vehiculo;
         Scanner s = new Scanner(System.in);
         int opcion;
         int presupuesto;
@@ -54,6 +55,27 @@ public class AgenciaMadCars {
                 }
             break;
         }
+
+        vehiculo = builder.getCar();
+        String descripcionTotal;
+        //falta calcular los totales de las partes
+        int costoTotal;
+        int ataqueTotal;
+        int defensaTotal;
+        int velocidadTotal;
+
+        //falta revisar si se pasó del presupuesto
+        System.out.println( "Este es su auto:\n ")
+        System.out.println( "Componentes: "+ descripcionTotal+"\n ")
+        System.out.println( "Costo: "+ costoTotal+"\n ")
+        System.out.println( "Ataque: "+ ataqueTotal+"\n ")
+        System.out.println( "Defensa: "+ defensaTotal+"\n ")
+        System.out.println( "Velocidad: "+ velocidadTotal+"\n ")
+        /* getCosto()
+        getNombre
+        getAtaque
+        getDefensa
+        getVelocidad */
     }
 
     
