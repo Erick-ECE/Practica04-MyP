@@ -1,4 +1,4 @@
-public class StockBuilder1 implements AbstractBuilder {
+public class StockBuilder1 implements AbstractBuilder { //clase para un Stock camion
     public StockBuilder1(){super.vehiculo = new Vehiculo();}
 
     public void tipoCarroceria(){
@@ -12,17 +12,17 @@ public class StockBuilder1 implements AbstractBuilder {
     }
 
     public void addLlantas(){
-        Llantas llantas = new CarroceriaCamion();
+        Llantas llantas = new LlantasOffRoad();
         super.vehiculo.setLlantas(llantas);
     }
 
     public void addBlindaje(){
-        Blindaje blindaje = new CarroceriaCamion();
+        Blindaje blindaje = new BlindajeSimple();
         super.vehiculo.setBlindaje(blindaje);
     }
 
     public void addArmas(){
-        Armas armas = new CarroceriaCamion();
+        Armas armas = new ArmaLanza();
         super.vehiculo.setArmas(armas);
     }
 }
