@@ -34,9 +34,11 @@ public class AgenciaMadCars {
                             "      1.- carro personalizado \n" + 
                             "      2.- opción de stock \n");
         opcion = s.nextInt();
+
         switch(opcion){
                 case 1:builder = new PersonalizedBuilder();
                 break;
+
                 case 2:
                     System.out.println( " \n"+ "Escoja una opción :\n "+
                             "      1.- Stock 1 \n" + 
@@ -57,7 +59,7 @@ public class AgenciaMadCars {
                     builder = new PersonalizedBuilder();
                 break;
         }
-        s.close();
+        
 
         if(builder!=null){//revisa que el builder se haya instanciado
             //Construlle el auto
