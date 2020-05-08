@@ -4,7 +4,7 @@ default:
 	if [ ! -d class ]; then mkdir class; fi;
 
 compile: default
-	javac src/AgenciaMadCars.java -d ./class
+	javac src/*.java -d ./class
 
 run: compile
 	java -cp ./class AgenciaMadCars
